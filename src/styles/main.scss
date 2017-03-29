@@ -1,0 +1,14 @@
+#Copyright
+{
+    position:fixed;
+    font-size: 10px;
+    bottom:0px;
+}
+
+#root{
+    float:right;
+    width:90vw;
+    @media screen and (max-width:550px){
+        width: 100vw;
+    }
+}

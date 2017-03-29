@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+}
+
+.App-intro {
+
+  position:relative;
+}
+
+
+.intro-pic{
+  width: 90%;
+  height: 60vh;
+  background-image: url('../imgs/intro.jpg');
+  background-size: cover;
+  background-repeat:repeat-x;
+  position:absolute;
+  top:0;
+  left:5%;
+  z-index:1;
+  animation: animatedBackground 500s linear infinite;
+
+  @media screen and (max-width:550px){
+        height:30vh;
+  }  
+}
+
+.intro-title{
+  position:relative;
+  width:90%;
+  min-height: 60vh;
+  background-color:red;
+  top:0;
+  z-index:2;
+  //margin-left: -40px;
+  font-size:8em;
+  font-family: Brush Script Std, Brush Script MT, cursive;
+  @media screen and (max-width:550px){
+        display:none;
+        height:30vh;
+  } 
+}
+
+//----------------animations----------------------
+@keyframes animatedBackground{
+  from{ background-position: 0 0; }
+  to{ background-position : 100% 0;}
+}
+
