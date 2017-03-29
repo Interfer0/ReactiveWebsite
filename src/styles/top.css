@@ -11,9 +11,13 @@
   font-size: 20px; }
 
 .Nav {
-  width: 9vw;
+  position: fixed;
+  background-color: lightcyan;
+  min-width: 9vw;
+  max-width: 14vw;
   height: 100vh;
-  float: left; }
+  float: left;
+  z-index: 90; }
 
 .Nav .links {
   padding-top: 25vh;
@@ -30,7 +34,8 @@
 
 @media screen and (max-width: 550px) {
   .Nav {
-    width: 100vw;
+    max-width: none;
+    width: 100%;
     height: 60px;
     background-color: darkorange;
     display: flex;
@@ -45,7 +50,7 @@
 @media screen and (max-width: 550px) {
   .Nav:hover {
     background-color: darkorange;
-    position: absolute;
+    position: fixed;
     width: 80%;
     height: 80%;
     z-index: 90; }

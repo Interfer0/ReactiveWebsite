@@ -1,47 +1,109 @@
 .App {
   text-align: center; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
-.App-header {
-  background-color: #222;
-  color: white; }
+@media screen and (max-width: 550px) {
+  .App {
+    width: 100%;
+    margin: auto;
+    margin-top: 60px; } }
 
 .App-intro {
+  width: 100%;
+  min-height: 600px;
   position: relative; }
 
+@media screen and (max-width: 550px) {
+  .App-intro {
+    height: 30vh;
+    min-height: 30vh;
+    width: 100%;
+    margin: auto; } }
+
 .intro-pic {
-  width: 90%;
-  height: 60vh;
+  height: 600px;
+  min-height: 600px;
+  width: 100%;
   background-image: url("../imgs/intro.jpg");
   background-size: cover;
   background-repeat: repeat-x;
   position: absolute;
   top: 0;
-  left: 5%;
+  left: 0;
   z-index: 1;
   animation: animatedBackground 500s linear infinite; }
 
 @media screen and (max-width: 550px) {
   .intro-pic {
-    height: 30vh; } }
+    width: 100%;
+    height: 30vh;
+    min-height: 30vh;
+    margin: auto; } }
 
 .intro-title {
   position: relative;
-  width: 90%;
-  min-height: 60vh;
-  background-color: red;
+  min-height: 600px;
   top: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 8em;
-  font-family: Brush Script Std, Brush Script MT, cursive; }
+  font-family: Brush Script Std, Brush Script MT, cursive;
+  color: orange; }
+
+.intro-title .intro-fname {
+  position: relative;
+  display: block; }
+
+.intro-title .intro-lname {
+  position: relative;
+  display: block; }
 
 @media screen and (max-width: 550px) {
   .intro-title {
     display: none;
-    height: 30vh; } }
+    height: 30vh;
+    min-height: 30vh; } }
+
+.cubes-app {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+  margin-left: 9vw; }
+
+.cubes-app .cubes {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (max-width: 1000px) {
+  .cubes-app .cubes {
+    height: 20vw;
+    width: 20vw;
+    margin-left: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh; } }
+
+@media screen and (max-width: 550px) {
+  .cubes-app .cubes {
+    height: 60vw;
+    min-height: 10vh;
+    width: 60vw;
+    margin-bottom: 1vh;
+    margin-left: 1vw; } }
+
+@media screen and (max-width: 550px) {
+  .cubes-app {
+    flex-direction: column;
+    margin-left: none; } }
 
 @keyframes animatedBackground {
   from {

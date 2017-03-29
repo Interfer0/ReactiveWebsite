@@ -13,7 +13,7 @@ class Top extends Component {
                         {/* Add links here */}
                         <Link to='/' className="tbLink">Home</Link>
                         <Link to='/Goals' className="tbLink">Goals</Link>
-                        <Link to='/Classes' className="tbLink">Class</Link>
+                        <Link to='/Classes' className="tbLink">Classes</Link>
                         <Link to='/About' className="tbLink">About</Link>
                     </div>
                 </div> 
