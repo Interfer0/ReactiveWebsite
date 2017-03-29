@@ -66,6 +66,11 @@
     height: 30vh;
     min-height: 30vh; } }
 
+.cubes:hover {
+  background-color: lightskyblue;
+  transform: scale(1.05);
+  font-weight: bold; }
+
 .cubes-app {
   width: 90vw;
   display: flex;
@@ -78,11 +83,13 @@
 .cubes-app .cubes {
   width: 200px;
   height: 200px;
-  background-color: red;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border: 1px;
+  border-style: groove;
+  transition: all .4s ease-in-out; }
 
 @media screen and (max-width: 1000px) {
   .cubes-app .cubes {
@@ -105,8 +112,13 @@
     flex-direction: column;
     margin-left: none; } }
 
+.words-app {
+  text-align: left; }
+
 @keyframes animatedBackground {
   from {
     background-position: 0 0; }
   to {
     background-position: 100% 0; } }
+
+@keyframes shakecubes {}

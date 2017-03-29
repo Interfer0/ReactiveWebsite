@@ -23,7 +23,7 @@ class App extends Component {
 
         <div className="cubes-app">
 
-          <div  id="waves" className="cubes">
+          <div  className="cubes">
             <span>Career <br/>and <br/>History</span>
           </div>
           <div className="cubes">
@@ -32,6 +32,14 @@ class App extends Component {
           <div className="cubes">
             Hobbies
           </div>
+        </div>
+
+        <div className="words-app">
+          About Me:
+          <p>
+
+
+          </p>
         </div>
 
       </div>

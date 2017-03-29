@@ -70,6 +70,12 @@
         min-height:30vh;
   } 
 }
+/// -------------------cubes section----------------
+.cubes:hover{
+        background-color:lightskyblue;
+        transform: scale(1.05);
+        font-weight:bold;
+}
 
   .cubes-app{
     width: 90vw;
@@ -82,11 +88,13 @@
     .cubes{
       width: 200px;
       height: 200px;
-      background-color: red;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      border:1px;
+      border-style: groove;
+      transition: all .4s ease-in-out;
       @media screen and (max-width:1000px){
         height:20vw;
         width:20vw;
@@ -111,9 +119,16 @@
     
   }
 
+  //---------------------text section--------------
+.words-app{
+  text-align:left;
+}
 //----------------animations----------------------
 @keyframes animatedBackground{
   from{ background-position: 0 0; }
   to{ background-position : 100% 0;}
 }
 
+@keyframes shakecubes{
+
+}
