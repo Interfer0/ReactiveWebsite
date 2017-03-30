@@ -23,7 +23,7 @@
   height: 600px;
   min-height: 600px;
   width: 100%;
-  background-image: url("../imgs/intro.jpg");
+  background-image: url("../imgs/Moab.jpg");
   background-size: cover;
   background-repeat: repeat-x;
   position: absolute;
@@ -71,6 +71,18 @@
   transform: scale(1.05);
   font-weight: bold; }
 
+#ocIMG {
+  background-image: url("../imgs/oc.jpg");
+  background-size: cover; }
+
+#thIMG {
+  background-image: url("../imgs/th.jpg");
+  background-size: cover; }
+
+#hikingIMG {
+  background-image: url("../imgs/hiking.jpg");
+  background-size: cover; }
+
 .cubes-app {
   width: 90vw;
   display: flex;
@@ -81,6 +93,7 @@
   margin-left: 9vw; }
 
 .cubes-app .cubes {
+  color: white;
   width: 200px;
   height: 200px;
   display: flex;
@@ -113,12 +126,49 @@
     margin-left: none; } }
 
 .words-app {
+  margin-top: 10vh;
+  width: 85vw;
+  float: right;
   text-align: left; }
+
+.words-app .words-about {
+  width: 50vw;
+  margin: auto; }
+
+@media screen and (max-width: 550px) {
+  .words-app {
+    margin-top: 3vh;
+    margin-left: none;
+    margin-right: 4vw; }
+  .words-app .words-about {
+    width: 85vw;
+    margin: auto; } }
+
+.footer-app {
+  background-color: orange;
+  min-height: 10vh;
+  margin-top: 10vh;
+  padding-right: 5vw;
+  padding-bottom: 3vh;
+  text-align: right;
+  width: 100vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.footer-app .footLink {
+  padding-top: auto;
+  padding-bottom: auto;
+  float: right; }
+
+@media screen and (max-width: 550px) {
+  .footer-app {
+    min-height: 20vh; } }
 
 @keyframes animatedBackground {
   from {
     background-position: 0 0; }
   to {
     background-position: 100% 0; } }
-
-@keyframes shakecubes {}
