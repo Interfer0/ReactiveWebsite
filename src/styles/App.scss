@@ -4,6 +4,7 @@
         width:100%;
         margin: auto;
         margin-top:60px;
+
   } 
 }
 
@@ -24,7 +25,7 @@
   height: 600px;
   min-height:600px;
   width: 100%;
-  background-image: url('../imgs/intro.jpg');
+  background-image: url('../imgs/Moab.jpg');
   background-size: cover;
   background-repeat:repeat-x;
   position:absolute;
@@ -70,50 +71,116 @@
         min-height:30vh;
   } 
 }
+/// -------------------cubes section----------------
+.cubes:hover{
+        background-color:lightskyblue;
+        transform: scale(1.05);
+        font-weight:bold;
+}
 
-  .cubes-app{
-    width: 90vw;
+#ocIMG{
+  background-image: url('../imgs/oc.jpg');
+  background-size:cover;
+}
+#thIMG{
+  background-image: url('../imgs/th.jpg');
+  background-size:cover;
+}
+#hikingIMG{
+  background-image: url('../imgs/hiking.jpg');
+  background-size:cover;
+}
+
+.cubes-app{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+  margin-left: 9vw;
+  .cubes{
+    color:white;
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 1vh;
-    margin-left: 9vw;
-    .cubes{
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      @media screen and (max-width:1000px){
-        height:20vw;
-        width:20vw;
-        margin-left: 2vh;
-        margin-top:1vh;
-        margin-bottom: 1vh;
-        
-      }
-      @media screen and (max-width:550px){
-        height:60vw;
-        min-height:10vh;
-        width:60vw;
-        margin-bottom: 1vh;
-        margin-left: 1vw;
-        
-      } 
+    justify-content: center;
+    border:1px;
+    border-style: groove;
+    transition: all .4s ease-in-out;
+    @media screen and (max-width:1000px){
+      height:20vw;
+      width:20vw;
+      margin-left: 2vh;
+      margin-top:1vh;
+      margin-bottom: 1vh;
+      
     }
     @media screen and (max-width:550px){
-        flex-direction: column;
-        margin-left: none;
+      height:60vw;
+      min-height:10vh;
+      width:60vw;
+      margin-bottom: 1vh;
+      margin-left: 1vw;
+      
     } 
-    
   }
+  @media screen and (max-width:550px){
+      flex-direction: column;
+      margin-left: none;
+  } 
+  
+}
+
+  //---------------------text section--------------
+.words-app{
+  margin-top: 10vh;
+  width:85vw;
+  float:right;
+  text-align:left;
+  .words-about{
+    width:50vw;
+    margin: auto;
+  }
+  @media screen and (max-width:550px){
+    margin-top: 3vh;
+    margin-left: none;
+    margin-right: 4vw;
+    .words-about{
+      width:85vw;
+      margin: auto;
+    }
+  } 
+}
+
+//------------------footer section-------------------
+.footer-app{
+  background-color:orange;
+  min-height:10vh;
+  margin-top: 10vh;
+  padding-right:5vw;
+  padding-bottom:3vh;
+  text-align: right;
+  width:100vw;
+  float:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:flex-end;
+  .footLink{
+    padding-top: auto;
+    padding-bottom:auto;
+    float:right;
+  }
+  @media screen and (max-width:550px){
+    min-height:20vh;
+  }
+}
 
 //----------------animations----------------------
 @keyframes animatedBackground{
   from{ background-position: 0 0; }
   to{ background-position : 100% 0;}
 }
-
